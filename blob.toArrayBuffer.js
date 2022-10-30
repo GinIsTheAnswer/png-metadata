@@ -1,3 +1,5 @@
+import { Blob } from 'buffer';
+
 if(!Blob.prototype.arrayBuffer){
 	Blob.prototype.arrayBuffer = function(){
 		return new Promise((resolve,reject) => {
